@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Toggle from "./Tasks/Toggle";
+import Api from "./Tasks/Api";
+import Lang from "./Tasks/Lang";
+import Context from "./Tasks/Context";
+import Counter from "./Tasks/Counter";
+import Useref from "./Tasks/Useref";
+import TaskF from "./Tasks/TaskF";
+import Demo from "./Tasks/TaskG";
+
 
 function App() {
+
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Toggle />
+    <hr />
+    <Api />
+    <hr />
+    <Context>
+    <Lang />
+    </Context>
+    <hr />
+    <Counter />
+    <hr/>
+    <Useref />
+    <hr />
+    <TaskF />
+    <hr />
+    <Demo />
+    <hr />
+    </>
+    
   );
 }
 
